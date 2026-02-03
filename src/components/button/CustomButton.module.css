@@ -16,3 +16,7 @@
   list-style: none;
   cursor: pointer;
 }
+
+.btn:active {
+  scale: 0.95;
+}

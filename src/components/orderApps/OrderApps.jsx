@@ -10,20 +10,20 @@ import uberEatsLogo from "../../assets/Uber Eats logo.svg";
 import justEatLogo from "../../assets/just eat.svg";
 
 const apps = [
-  {logo: uberEatsLogo},
-  {logo: grubhubLogo},
-  {name: "Postmates", color: "#000000"},
-  {logo: doordashLogo},
-  {logo: foodpandaLogo, color: "#D70F64"},
-  {name: "deliveroo", color: "#00CCBC", logo: deliverooLogo},
-  {logo: instacartLogo, color: "#E06209"},
-  {logo: justEatLogo},
-  {logo: didiFoodLogo, color: "#2C2F24"},
+  {name: "Uber Eats", logo: uberEatsLogo, showName: false},
+  {name: "Grubhub", logo: grubhubLogo, showName: false},
+  {name: "Postmates", color: "#000000", showName: true},
+  {name: "DoorDash", logo: doordashLogo, showName: false},
+  {name: "Foodpanda", logo: foodpandaLogo, color: "#D70F64", showName: false},
+  {name: "Deliveroo", logo: deliverooLogo, color: "#00CCBC", showName: true},
+  {name: "Instacart", logo: instacartLogo, color: "#E06209", showName: false},
+  {name: "Just Eat", logo: justEatLogo, showName: false},
+  {name: "DiDi Food", logo: didiFoodLogo, color: "#2C2F24", showName: false},
 ];
 
 export default function OrderApps() {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.textColumn}>
           <h2 className={styles.title}>You can order through apps</h2>
@@ -31,19 +31,21 @@ export default function OrderApps() {
         </div>
 
         <div className={styles.appsGrid}>
-          {apps.map((elem, index) => (
-            <div key={index} className={styles.card}>
+          {apps.map(({name, logo, color, showName}) => (
+            <div key={name} className={styles.card}>
               <div className={styles.appContent}>
-                {elem.logo && <img src={elem.logo} alt={elem.name} className={styles.logo} />}
+                {logo && <img src={logo} alt={`${name} Logo`} className={styles.logo} />}
 
-                <span className={styles.appName} style={elem.color ? {color: elem.color} : {}}>
-                  {elem.name}
-                </span>
+                {(!logo || showName) && (
+                  <span className={styles.appName} style={color ? {color} : {}}>
+                    {name}
+                  </span>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
