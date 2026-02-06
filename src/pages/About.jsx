@@ -16,7 +16,7 @@ export default function About() {
     <div className={styles.about}>
       <header>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </header>
 
       <main>

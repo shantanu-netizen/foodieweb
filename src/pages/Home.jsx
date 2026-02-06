@@ -39,7 +39,7 @@ export default function Home() {
     <div className={styles.page}>
       <header className={styles.header}>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </header>
 
       <main>

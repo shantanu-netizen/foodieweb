@@ -14,7 +14,7 @@ export default function ContactNav() {
           <LocalPhoneOutlinedIcon /> <span>(+91) 9898989090</span>
         </li>
         <li className={styles.item}>
-          <EmailOutlinedIcon /> <span>abc@gmail.com</span>
+          <EmailOutlinedIcon /> <span>moderndaba@gmail.com</span>
         </li>
       </ul>
       <ul className={styles.social}>

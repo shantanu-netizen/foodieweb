@@ -40,7 +40,7 @@ export default function BookTable() {
     <div>
       <div className={styles.menuBar}>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </div>
 
       {/* Main Container */}

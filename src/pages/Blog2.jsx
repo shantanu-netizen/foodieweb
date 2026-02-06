@@ -15,7 +15,7 @@ export default function Blog2() {
     <div className={styles.blogDetail}>
       <header>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </header>
 
       <main className={styles.page}>

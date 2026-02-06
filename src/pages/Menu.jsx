@@ -18,7 +18,7 @@ export default function Menu() {
     <div>
       <div>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </div>
 
       <div className={styles.menuPage}>

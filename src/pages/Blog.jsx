@@ -103,7 +103,7 @@ export default function Blog() {
     <div className={styles.blogPage}>
       <header>
         <ContactNav />
-        <MenuBar title="FSD Fooder" />
+        <MenuBar title="Modern DABA" />
       </header>
 
       <section className={styles.h1}>
