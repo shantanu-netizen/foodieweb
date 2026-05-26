@@ -7,10 +7,14 @@ import BookTable from "./pages/BookTable";
 import Blog2 from "./pages/Blog2";
 import About from './pages/About';
 import Contact from "./pages/Contact";
+import SignUp from "./components/auth/SignUp";
+import Login from "./components/auth/Login";
 export default function App() {
   return (
     <div>
       <Routes>
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blogs/article" element={<Blog2 />} />
